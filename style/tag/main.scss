@@ -1,0 +1,48 @@
+/* Main Style */
+
+body > noscript,
+body > main
+{
+  padding: 0.2em 1%;
+
+  section {
+    position: relative;
+    width: 50em;
+    max-width: 94%;
+    margin: 2rem auto;
+    border-radius: 0.1em;
+
+    box-shadow: 0.1em 0.1em 0.2em $shadow;
+    background: $white;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0.6em 7%;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+
+      opacity: 0.04;
+      filter: grayscale(40%);
+    }
+
+    aside {
+      position: absolute;
+      right: 1em;
+
+      font-style: italic;
+    }
+
+    nav {
+      float: right;
+
+      a:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

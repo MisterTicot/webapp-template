@@ -1,0 +1,58 @@
+/* Layout */
+
+$header-height: 3rem;
+$footer-height: 3em;
+
+html
+{
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+body
+{
+  height: 100%;
+
+  padding: $header-height 0 $footer-height 0;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  
+  background: $white;
+  color: $black;
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: $header-height;
+
+  background: $bg-dark;
+  color: $fg-dark;
+}
+
+main, noscript
+{
+  display: block;
+  width: 50em;
+  max-width: 96%;
+  margin: auto;
+
+  // Prevent Android Chrome font boost.
+  max-height: 100%;
+
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+
+  background: $bg-dark;
+  color: $fg-dark;
+}
+
